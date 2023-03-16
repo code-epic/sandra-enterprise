@@ -1,3 +1,6 @@
+<p align="center">
+<img align="center" src="https://raw.githubusercontent.com/code-epic/sandra-enterprise/fc4db4d7542fb937d20a06086c37ebf6d527fcde/img/logo.svg" width=" 200px;"/>
+</p>
 
 **Sandra Server Enterprise** es una plataforma para arquitecturas empresariales que estará operativa para su organización ampliando la relación entre sistemas de diferentes naturaleza, así como la colaboración entre sus tecnologías adyacentes que nunca fueron tan importantes como lo son hoy en día, también cuenta con capacidades comunes compartidas para todos los productos, como el registro integrado, la gestión de usuarios, el transportes de información, **la seguridad,** los registro persistentes, la agrupación de servicios y respaldo, la generación de su propio caché, la coordinación y un marco de interfaz gráfica de usuario donde podrá gestionar toda las actividades de administración.
 
@@ -26,3 +29,40 @@ La plataforma es un software que se conecta a otros sistemas y protocolos lo que
 -   Ofrecer un grupo de servicios genéricos que permite que las aplicaciones funcionen conjuntamente y evita que los sistemas dupliquen esfuerzos.
     
 Asimismo, contribuye al desarrollo de aplicaciones proporcionando habituales abstracciones de programación, enmascarando la heterogeneidad de aplicaciones y la distribución de hardware y sistemas operativos subyacentes, ocultando la información de programación de bajo nivel. Ayuda a los desarrolladores, los arquitectos y los líderes empresariales a automatizar las decisiones manuales, lo cual mejora la gestión de los recursos y el nivel de eficiencia general. Los desarrolladores y los arquitectos pueden trabajar con agilidad en diferentes niveles teniendo como referencia conjuntos de lenguajes de programación, marcos y tiempos de ejecución básicos. También ofrece las funciones que se utilizan con más frecuencia, como los servidores web, el inicio de sesión
+
+## Instalación
+
+Sandra Server Enterprise, versiones bajo linux: Fedora 30+, CentOS 7+, Redhat
+
+## Dependencias
+Asegurese de tener instalado las siguientes dependencias:
+
+* `python` 3 or superior
+* `git`
+* C compiler (cross-compiling necesita compilar algunas veces)
+* `curl` 
+* `pkg-config` 
+* `libiconv` 
+* OpenSSL (`libssl-dev` or `openssl-devel` depende de la version linux).
+* `libstdc++-static` 
+
+## Requerimientos
+* [MongoDB 4+](https://www.mongodb.com/docs/manual/administration/install-enterprise-linux/)
+* MysqlServer 8+
+* [Golang 1.9+](https://go.dev/doc/install)
+
+
+```sh 
+# Instalacion desde script como root
+# @author crash.madover@gmail.com
+curl -L https://github.com/code-epic/sandra-enterprise/raw/main/pkg/linux/x86_64/sandra_cli.zip -o sandra_cli.zip
+unzip sandra_cli.zip
+rm -rf sandra_cli.zip
+chmod +x sandra_cli
+sudo ./sandra_cli install --option service 
+```
+
+
+***
+
+## Preparando - Base de Datos
