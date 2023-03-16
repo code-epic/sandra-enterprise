@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://raw.githubusercontent.com/code-epic/sandra-enterprise/fc4db4d7542fb937d20a06086c37ebf6d527fcde/img/logo.svg" width=" 200px;"/>
+    <img align="center" src="https://github.com/code-epic/sandra-enterprise/raw/main/img/logo.svg" width=" 200px;"/>
 </p>
 
 **Sandra Server Enterprise** es una plataforma para arquitecturas empresariales que estará operativa para su organización ampliando la relación entre sistemas de diferentes naturaleza, así como la colaboración entre sus tecnologías adyacentes que nunca fueron tan importantes como lo son hoy en día, también cuenta con capacidades comunes compartidas para todos los productos, como el registro integrado, la gestión de usuarios, el transportes de información, **la seguridad,** los registro persistentes, la agrupación de servicios y respaldo, la generación de su propio caché, la coordinación y un marco de interfaz gráfica de usuario donde podrá gestionar toda las actividades de administración.
